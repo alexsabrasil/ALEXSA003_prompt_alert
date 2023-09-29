@@ -4,10 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="./style.css" />
+    <title>Calculadora de Conta de Pizzaria</title>
   </head>
-  <header></header>
+  <body>
 
-  <body></body>
+    <header>
+      <div class="header-text">
+          Bem-vindo ao Desafio Prompt Game 
+          <p>Calculadora de Conta de Pizzaria</p>
+      </div>
+  </header>
+
+  <div class="container">
+      <!-- Conteúdo da calculadora -->
+      <h1>Calculadora</h1>
+
+      <label for="valorConta">Valor Total da Conta:</label>
+      <input type="number" id="valorConta"><br>
+
+      <label for="quantidadeClientes">Quantidade de Clientes:</label>
+      <input type="number" id="quantidadeClientes"><br>
+
+      <button onclick="calcularValorPorCliente()">Calcular</button>
+      <button id="limpar" onclick="limparCampos()">Limpar</button> 
+      
+      <p id="resultado"></p>
+  </div>
+
+  
+  <footer>
+        <div>
+            <a href="https://www.linkedin.com/in/alexsatecnolog/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/alexsabrasil/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://replit.com/@alexsabrasil" target="_blank" class="icone-replit">
+              <img src="replit.png" alt="Replit" class="imagem-responsiva">
+          </a>
+        </div>
+        <p class="direitos-autorais">&copy; <strong>2023 Desenvolvido por Alexsandra Silva</strong></p>
+    </footer>
+
+  </body>
   <script src="./main.js"></script>
 </html>
